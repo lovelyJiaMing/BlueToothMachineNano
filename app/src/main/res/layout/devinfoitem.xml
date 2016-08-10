@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/devname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="设备名称：" />
+
+    <TextView
+        android:id="@+id/devname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/devname"
+        android:layout_toRightOf="@id/devname"
+        android:text="设备1" />
+
+    <TextView
+        android:id="@+id/devaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/devname"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="设备地址：" />
+
+    <TextView
+        android:id="@+id/devaddress1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/devaddress"
+        android:layout_toRightOf="@id/devaddress"
+        android:text="设备地址1" />
+
+    <TextView
+        android:id="@+id/devbound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/devaddress"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="设备配对连接情况：" />
+
+    <TextView
+        android:id="@+id/devbound1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/devbound"
+        android:layout_toRightOf="@id/devbound"
+        android:text="未配对" />
+
+    <TextView
+        android:id="@+id/devconnect1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/devbound"
+        android:layout_toRightOf="@id/devbound1"
+        android:layout_marginLeft="5dp"
+        android:text="未连接" />
+
+</RelativeLayout>

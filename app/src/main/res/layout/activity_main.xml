@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/k40_tongyongbg_1mh"
+    tools:context="com.example.administrator.bluetoothmachine.MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="电源控制列表控制台(必须选中设备列表一项)"
+        android:textColor="@color/background_floating_material_light" />
+
+    <TextView
+        android:id="@+id/disconnectdev"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/textviewstyle"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:text="断开设备" />
+
+    <LinearLayout
+        android:id="@+id/layoutcall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/disconnectdev"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/downloadfilecall"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/textviewstyle"
+            android:gravity="center"
+            android:text="下载文件" />
+
+        <TextView
+            android:id="@+id/deletefilecall"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/textviewstyle"
+            android:gravity="center"
+            android:text="删除文件" />
+
+        <TextView
+            android:id="@+id/clearmemcall"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/textviewstyle"
+            android:gravity="center"
+            android:text="清空用户" />
+
+        <TextView
+            android:id="@+id/changeadmin"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/textviewstyle"
+            android:gravity="center"
+            android:text="更改账号" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutbase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layoutcall"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/start"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/textviewstyle"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/discover"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/textviewstyle"
+            android:gravity="center"
+            android:text="搜寻设备" />
+
+        <TextView
+            android:id="@+id/bounddev"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/textviewstyle"
+            android:gravity="center"
+            android:text="配对设备" />
+
+        <TextView
+            android:id="@+id/connectdev"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/textviewstyle"
+            android:gravity="center"
+            android:text="连接设备" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listviewdev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layoutbase"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp" />
+
+    <TextView
+        android:id="@+id/sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="搜索中...." />
+</RelativeLayout>
